@@ -8,11 +8,24 @@ const projects = [
     href: "https://github.com/yourname/course-planner",
   },
   {
-    title: "AI Chatbot (Ollama + RAG)",
-    blurb: "FAISS vector store + PDF ingestion, Flask API, nice UI.",
+    title: "AI Chatbot (Ollama Deepseek + RAG)",
+    blurb: "FAISS vector store + PDF ingestion, Flask API, ",
     tags: ["Python", "FAISS", "Flask"],
     href: "https://github.com/yourname/rag-bcis-bot",
   },
+
+  {
+  title: "Jeff the Shark",
+  blurb: "A 3D printed model with Arduino Mp4 Audio Functions",
+  tags: ["Arduino", "3d Print", "Physical Computing"]
+
+},
+
+{
+  title: "Maori Language App Figma Demo",
+  blurb: "A prototype made in figma for a potential Te Reo Learning App",
+  tags: ["Figma", "UI/UX Design", "Prototyping"]
+}
 ];
 
 export default function Page() {
@@ -21,10 +34,10 @@ export default function Page() {
       {/* Hero */}
       <section className="space-y-6">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-          Kia ora, I’m <span className="underline decoration-4 decoration-blue-500/60">Your Name</span>.
+          Kia ora, Welcome to my Creative <Portfolio></Portfolio><span className="underline decoration-4 decoration-blue-500/60">Your Name</span>.
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-300">
-          Creative developer focused on clean UX, AI integrations, and fast shipping.
+          Software Development Student 
         </p>
         <div className="flex gap-3">
           <Link
@@ -87,7 +100,7 @@ export default function Page() {
 
       {/* Footer */}
       <footer className="pt-8 text-sm text-gray-500">
-        © {new Date().getFullYear()} Your Name — Built with Next.js on Vercel.
+        © {new Date().getFullYear()} Lachlan McCreanney — Built with Next.js on Vercel.
       </footer>
     </main>
   );
