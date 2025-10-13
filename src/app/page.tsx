@@ -34,7 +34,7 @@ export default function Page() {
       {/* Hero */}
       <section className="space-y-6">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-          Kia ora, Welcome to my Creative Portfolio<span className="underline decoration-4 decoration-blue-500/60">Your Name</span>.
+          Kia ora, Welcome to my Creative Portfolio <span className="underline decoration-4 decoration-blue-500/60"></span>.
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-300">
           Software Development Student 
