@@ -37,7 +37,11 @@ export default function Page() {
           Kia ora, Welcome to my Creative Portfolio <span className="underline decoration-4 decoration-blue-500/60"></span>.
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-300">
-          Software Development Student 
+            
+
+
+
+            
         </p>
         <div className="flex gap-3">
           <Link
@@ -94,8 +98,8 @@ export default function Page() {
       <section id="contact" className="space-y-3">
         <h2 className="text-2xl font-semibold">Contact</h2>
         <p className="text-gray-700 dark:text-gray-300">
-          Best way: <a className="underline" href="mailto:you@example.com">you@example.com</a> or{" "}
-          <a className="underline" href="https://www.linkedin.com/in/your-handle" target="_blank">LinkedIn</a>.
+          Best way: <a className="underline" href="mailto:you@example.com">lachlanmccreanney@gmail.com</a> or{" "}
+          <a className="underline" href="https://www.linkedin.com/in/lmccreanney" target="_blank">Linkdin</a>.
         </p>
       </section>
 
