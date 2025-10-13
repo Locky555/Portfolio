@@ -47,7 +47,7 @@ export default function Page() {
             View Projects
           </Link>
           <a
-            href="mailto:you@example.com"
+            href="lachlanmccreanney@gmail.com"
             className="rounded-2xl px-5 py-2.5 bg-black text-white dark:bg-white dark:text-black"
           >
             Contact Me
@@ -84,8 +84,9 @@ export default function Page() {
       <section id="about" className="space-y-3">
         <h2 className="text-2xl font-semibold">About</h2>
         <p className="text-gray-700 dark:text-gray-300">
-          I build portfolios, data tools, and AI features. Comfortable with Next.js, Node/Nest, MongoDB, and Python.
-          Currently at AUT BCIS (Software Dev). I like clean UI, measurable impact, and tidy repos.
+          I am currently a student in Auckland University of Technology (AUT) majoring in Software Development for a Bachelors of Computer and Information Sciences
+          with minors in Creative Technology and Digital Communications.
+          My focus is creating interactive, fun, applications with an interest in A.I, Physical Computing and VFX/3D Modelling/Design
         </p>
       </section>
 
