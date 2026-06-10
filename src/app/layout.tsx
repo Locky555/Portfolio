@@ -59,7 +59,7 @@ Designed in Blender and sliced with Cura.
 
 What I learned: [add what you learned here]
 Challenges: [add any challenges you faced]`,
-    images: ["/media/Jeff_The_Shark/jeff2.jpg"],
+    images: ["/media/Jeff_The_Shark/jeff2.jpg", "/media/Jeff_The_Shark/jeff1.jpg"], 
     video: "/media/Jeff_The_Shark/jeff.mp4", // e.g. "/videos/jeff-demo.mp4"
   },
   {
@@ -99,6 +99,27 @@ What I learned: [add what you learned here]
 Challenges: [add any challenges you faced]`,
     images: ["/images/translator-1.png", "/images/translator-2.png"],
     video: null,
+  },
+
+
+    {
+    id: 4,
+    title: "Various Projects",
+    blurb: "A collection of small ideas/creations both from university and in my own time",
+    tags: null,
+    href: null,
+    status: "Mobile App",
+    previewImage: null,
+    detail: `[Replace this with your own description]
+
+A mobile application built with Expo and React Native that translates text between languages 
+using the OpenAI API. The phone connects to a Node.js server running locally on my laptop, 
+tunnelled via ngrok — making it accessible from the mobile device without deploying to the cloud.
+
+What I learned: [add what you learned here]
+Challenges: [add any challenges you faced]`,
+    images: null,
+    video: ["media/Various/vid1", "media/Various/vid2","media/Various/vid3"],
   },
 ];
 
