@@ -2,8 +2,12 @@
 import { useState } from "react";
 
 // ─── PROJECT DATA ────────────────────────────────────────────────────────────
-// Fill in `detail`, `images`, and optionally `video` for each project.
-// Drop image files in public/images/ and video files in public/videos/
+// RULES:
+//   previewImage : single string or null
+//   images       : always an array (use [] if none)
+//   videos       : always an array (use [] if none)
+//   tags         : always an array (use [] if none)
+
 const projects = [
   {
     id: 0,
@@ -13,35 +17,27 @@ const projects = [
     href: "https://github.com/yourname/course-planner",
     status: "GitHub",
     previewImage: "/images/course-planner-preview.png",
-    detail: `[Replace this with your own description]
+    detail: `Replace with your description.
 
-This project is a full-stack web application for browsing and planning university courses. 
-Built with Next.js on the frontend and a NestJS REST API connected to MongoDB Atlas, 
-it features keyword search, tag-based filtering, and individual article-style pages per course.
-
-What I learned: [add what you learned here]
-Challenges: [add any challenges you faced]`,
+What I learned: ...
+Challenges: ...`,
     images: ["/images/course-planner-1.png", "/images/course-planner-2.png"],
-    video: null,
+    videos: [],
   },
   {
     id: 1,
     title: "AI Chatbot — Ollama Deepseek + RAG",
-    blurb: "FAISS vector store with PDF ingestion, a Flask API backend, and local LLM inference via Ollama.",
+    blurb: "FAISS vector store with PDF ingestion, Flask API backend, and local LLM inference via Ollama.",
     tags: ["Python", "FAISS", "Flask", "Ollama"],
     href: "https://github.com/yourname/rag-bcis-bot",
     status: "GitHub",
     previewImage: "/images/chatbot-preview.png",
-    detail: `[Replace this with your own description]
+    detail: `Replace with your description.
 
-A retrieval-augmented generation (RAG) chatbot that ingests PDF documents into a FAISS 
-vector store and answers questions using a locally-running Deepseek model via Ollama. 
-Flask handles the API layer between the frontend and the model.
-
-What I learned: [add what you learned here]
-Challenges: [add any challenges you faced]`,
+What I learned: ...
+Challenges: ...`,
     images: ["/images/chatbot-1.png", "/images/chatbot-2.png"],
-    video: null,
+    videos: ["/media/AI_Chatbot/chatbot.mp4"],
   },
   {
     id: 2,
@@ -51,16 +47,12 @@ Challenges: [add any challenges you faced]`,
     href: null,
     status: "Physical",
     previewImage: "/media/Jeff_The_Shark/jeff1.jpg",
-    detail: `[Replace this with your own description]
+    detail: `Replace with your description.
 
-Jeff is a 3D-printed great white shark with a DFPlayer Mini MP3 module and a servo motor 
-controlled by an Arduino Uno. Press a button and Jeff snaps his jaw and plays a sound effect. 
-Designed in Blender and sliced with Cura.
-
-What I learned: [add what you learned here]
-Challenges: [add any challenges you faced]`,
-    images: ["/media/Jeff_The_Shark/jeff2.jpg", "/media/Jeff_The_Shark/jeff1.jpg"], 
-    video: ["media/Jeff_The_Shark/jeff3.mp4"],
+What I learned: ...
+Challenges: ...`,
+    images: ["/media/Jeff_The_Shark/jeff1.jpg", "/media/Jeff_The_Shark/jeff2.jpg"],
+    videos: ["/media/Jeff_The_Shark/jeff3.mp4"],
   },
   {
     id: 3,
@@ -70,16 +62,12 @@ Challenges: [add any challenges you faced]`,
     href: null,
     status: "Design",
     previewImage: "/media/Figma/tui.png",
-    detail: `[Replace this with your own description]
+    detail: `Replace with your description.
 
-A prototype designed in Figma for a gamified Te Reo Māori learning app. 
-Focused on cultural authenticity, accessibility, and an engaging progression system 
-inspired by language-learning research and feedback from Māori community members.
-
-What I learned: [add what you learned here]
-Challenges: [add any challenges you faced]`,
+What I learned: ...
+Challenges: ...`,
     images: ["/media/Figma/tui.png"],
-    video: "/media/Figma/figma1.mp4",
+    videos: ["/media/Figma/figma1.mp4"],
   },
   {
     id: 4,
@@ -88,76 +76,59 @@ Challenges: [add any challenges you faced]`,
     tags: ["OpenAI", "Node.js", "Expo", "React Native"],
     href: null,
     status: "Mobile App",
-    previewImage: "/images/translator-preview.png",
-    detail: `[Replace this with your own description]
+    previewImage: null,
+    detail: `Replace with your description.
 
-A mobile application built with Expo and React Native that translates text between languages 
-using the OpenAI API. The phone connects to a Node.js server running locally on my laptop, 
-tunnelled via ngrok — making it accessible from the mobile device without deploying to the cloud.
-
-What I learned: [add what you learned here]
-Challenges: [add any challenges you faced]`,
-    images: ["/images/translator-1.png", "/images/translator-2.png"],
-    video: null,
+What I learned: ...
+Challenges: ...`,
+    images: [],
+    videos: [],
   },
-
-
-    {
+  {
     id: 5,
     title: "Various Projects",
-    blurb: "A collection of small ideas/creations both from university and in my own time",
-    tags: null,
+    blurb: "A collection of small ideas and creations from university and personal time.",
+    tags: ["Blender", "Unity", "Motion Graphics"],
     href: null,
-    status: "Mobile App",
+    status: "Various",
     previewImage: null,
-    detail: `[Replace this with your own description]
-
-A mobile application built with Expo and React Native that translates text between languages 
-using the OpenAI API. The phone connects to a Node.js server running locally on my laptop, 
-tunnelled via ngrok — making it accessible from the mobile device without deploying to the cloud.
-
-What I learned: [add what you learned here]
-Challenges: [add any challenges you faced]`,
-    images: null,
-    video: ["media/Various/vid1", "media/Various/vid2","media/Various/vid3"],
+    detail: `Replace with your description.`,
+    images: [],
+    videos: [
+      "/media/Various/LMcCreanney_MotionGraphicsComposite.mp4",
+      "/media/Various/Project10 - level 2 - Windows, Mac, Linux - Unity 2022.3.43f1_ _DX11_ 2024-09-23 01-03-01.mp4",
+    ],
   },
-
-
-
-
-   {
+  {
     id: 6,
     title: "Webflow",
-    blurb: "A mobile app built with Expo/React Native, using ngrok + Node.js as a local server and OpenAI for translation.",
-    tags: ["OpenAI", "Node.js", "Expo", "React Native"],
+    blurb: "Web design and interactive UI experiments built in Webflow.",
+    tags: ["Webflow", "UI/UX Design", "Web Design"],
     href: null,
-    status: "Mobile App",
-    previewImage: ["/media/Webflow/canvas.png", "/media/Webflow/canvas2.png"],
-    detail: `[Replace this with your own description]
+    status: "Design",
+    previewImage: "/media/Webflow/canvas.png",
+    detail: `Replace with your description.
 
-A mobile application built with Expo and React Native that translates text between languages 
-using the OpenAI API. The phone connects to a Node.js server running locally on my laptop, 
-tunnelled via ngrok — making it accessible from the mobile device without deploying to the cloud.
-
-What I learned: [add what you learned here]
-Challenges: [add any challenges you faced]`,
-    images: ["/images/translator-1.png", "/images/translator-2.png"],
-    video: ["/media/Webflow/canvas3.mp4"],
+What I learned: ...
+Challenges: ...`,
+    images: ["/media/Webflow/canvas.png", "/media/Webflow/canvas2.png"],
+    videos: ["/media/Webflow/canvas3.mp4"],
   },
 ];
 
+// ─── STATUS BADGE STYLES ─────────────────────────────────────────────────────
 const statusStyle: Record<string, React.CSSProperties> = {
   GitHub:     { background: "rgba(0,194,179,0.1)",   color: "#00C2B3", border: "1px solid rgba(0,194,179,0.3)" },
   Physical:   { background: "rgba(251,146,60,0.1)",  color: "#fb923c", border: "1px solid rgba(251,146,60,0.3)" },
   Design:     { background: "rgba(167,139,250,0.1)", color: "#a78bfa", border: "1px solid rgba(167,139,250,0.3)" },
-  "Mobile App": { background: "rgba(96,165,250,0.1)", color: "#60a5fa", border: "1px solid rgba(96,165,250,0.3)" },
+  "Mobile App": { background: "rgba(96,165,250,0.1)",  color: "#60a5fa", border: "1px solid rgba(96,165,250,0.3)" },
+  Various:    { background: "rgba(251,191,36,0.1)",  color: "#fbbf24", border: "1px solid rgba(251,191,36,0.3)" },
 };
 
 // ─── EXPANDED PANEL ──────────────────────────────────────────────────────────
 function ExpandedPanel({ project, onClose }: { project: typeof projects[0]; onClose: () => void }) {
   return (
     <div style={{
-      gridColumn: "1 / -1",
       background: "#161B22",
       border: "1px solid rgba(0,194,179,0.35)",
       borderRadius: 14,
@@ -178,64 +149,54 @@ function ExpandedPanel({ project, onClose }: { project: typeof projects[0]; onCl
           margin: 0 0 24px;
           max-width: 600px;
         }
-        .detail-text strong { color: #E8EDF2; }
+        .media-label {
+          font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+          color: #00C2B3; font-family: 'Space Grotesk', sans-serif;
+          font-weight: 600; margin: 0 0 10px;
+        }
         .media-scroll {
-          display: flex;
-          gap: 12px;
-          overflow-x: auto;
-          padding-bottom: 8px;
-          margin-bottom: 20px;
-          scrollbar-width: thin;
-          scrollbar-color: #21262D transparent;
+          display: flex; gap: 12px; overflow-x: auto;
+          padding-bottom: 8px; margin-bottom: 20px;
+          scrollbar-width: thin; scrollbar-color: #21262D transparent;
         }
         .media-scroll::-webkit-scrollbar { height: 4px; }
-        .media-scroll::-webkit-scrollbar-track { background: transparent; }
         .media-scroll::-webkit-scrollbar-thumb { background: #21262D; border-radius: 4px; }
       `}</style>
 
-      {/* Close */}
-      <button
-        onClick={onClose}
-        style={{
-          position: "absolute", top: 18, right: 18,
-          background: "none", border: "none", cursor: "pointer",
-          color: "#8B949E", fontSize: 20, lineHeight: 1,
-          padding: "4px 8px", borderRadius: 6,
-        }}
-        aria-label="Close"
-      >✕</button>
+      {/* Close button */}
+      <button onClick={onClose} aria-label="Close" style={{
+        position: "absolute", top: 18, right: 18,
+        background: "none", border: "none", cursor: "pointer",
+        color: "#8B949E", fontSize: 20, lineHeight: 1, padding: "4px 8px", borderRadius: 6,
+      }}>✕</button>
 
-      <h3 style={{ fontFamily: "'Space Grotesk'", fontSize: 18, fontWeight: 700, margin: "0 0 16px", color: "#E8EDF2" }}>
+      <h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 18, fontWeight: 700, margin: "0 0 16px", color: "#E8EDF2" }}>
         {project.title}
       </h3>
 
-      {/* Detailed description */}
       <p className="detail-text">{project.detail}</p>
 
-      {/* Video (if present) */}
-      {project.video && (
-        <div style={{ marginBottom: 20 }}>
-          <p style={{ fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", color: "#00C2B3", fontFamily: "'Space Grotesk'", fontWeight: 600, marginBottom: 10 }}>
-            Demo
-          </p>
-          <video
-            src={project.video}
-            controls
-            style={{
-              width: "100%", maxWidth: 560,
-              borderRadius: 8, border: "1px solid #21262D",
-              background: "#0D1117",
-            }}
-          />
+      {/* Videos */}
+      {project.videos.length > 0 && (
+        <div style={{ marginBottom: 24 }}>
+          <p className="media-label">Demo{project.videos.length > 1 ? "s" : ""}</p>
+          <div className="media-scroll">
+            {project.videos.map((src, i) => (
+              <video key={i} src={src} controls style={{
+                flexShrink: 0,
+                width: project.videos.length === 1 ? "100%" : 360,
+                maxWidth: 560,
+                borderRadius: 8, border: "1px solid #21262D", background: "#0D1117",
+              }} />
+            ))}
+          </div>
         </div>
       )}
 
       {/* Images */}
       {project.images.length > 0 && (
         <div style={{ marginBottom: 20 }}>
-          <p style={{ fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", color: "#00C2B3", fontFamily: "'Space Grotesk'", fontWeight: 600, marginBottom: 10 }}>
-            Screenshots
-          </p>
+          <p className="media-label">Screenshots</p>
           <div className="media-scroll">
             {project.images.map((src, i) => (
               <div key={i} style={{
@@ -259,7 +220,7 @@ function ExpandedPanel({ project, onClose }: { project: typeof projects[0]; onCl
         </div>
       )}
 
-      {/* Footer: tags + github link */}
+      {/* Tags + GitHub link */}
       <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center" }}>
         {project.tags.map((t) => (
           <span key={t} style={{
@@ -268,15 +229,10 @@ function ExpandedPanel({ project, onClose }: { project: typeof projects[0]; onCl
           }}>{t}</span>
         ))}
         {project.href && (
-          <a
-            href={project.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              marginLeft: "auto", fontSize: 13, color: "#00C2B3",
-              textDecoration: "none", fontFamily: "'Space Grotesk'", fontWeight: 600,
-            }}
-          >View on GitHub →</a>
+          <a href={project.href} target="_blank" rel="noopener noreferrer" style={{
+            marginLeft: "auto", fontSize: 13, color: "#00C2B3",
+            textDecoration: "none", fontFamily: "'Space Grotesk', sans-serif", fontWeight: 600,
+          }}>View on GitHub →</a>
         )}
       </div>
     </div>
@@ -298,20 +254,15 @@ function ProjectCard({ project, isOpen, onToggle }: {
       onMouseLeave={() => setHovered(false)}
       onClick={onToggle}
     >
-      {/* Hover preview image */}
-      {hovered && !isOpen && (
+      {/* Hover preview */}
+      {hovered && !isOpen && project.previewImage && (
         <div style={{
-          position: "absolute",
-          bottom: "calc(100% + 8px)",
-          left: "50%",
+          position: "absolute", bottom: "calc(100% + 8px)", left: "50%",
           transform: "translateX(-50%)",
-          width: 220, height: 130,
-          borderRadius: 10, overflow: "hidden",
-          background: "#0D1117",
-          border: "1px solid rgba(0,194,179,0.3)",
+          width: 220, height: 130, borderRadius: 10, overflow: "hidden",
+          background: "#0D1117", border: "1px solid rgba(0,194,179,0.3)",
           boxShadow: "0 8px 24px rgba(0,0,0,0.5)",
-          zIndex: 10, pointerEvents: "none",
-          animation: "fadeUp 0.15s ease",
+          zIndex: 10, pointerEvents: "none", animation: "fadeUp 0.15s ease",
         }}>
           <style>{`
             @keyframes fadeUp {
@@ -327,47 +278,39 @@ function ProjectCard({ project, isOpen, onToggle }: {
               const el = e.target as HTMLImageElement;
               el.style.display = "none";
               const p = el.parentElement!;
-              p.style.display = "flex";
-              p.style.alignItems = "center";
-              p.style.justifyContent = "center";
+              p.style.cssText += "display:flex;align-items:center;justify-content:center;";
               p.innerHTML = `<span style="color:#8B949E;font-size:12px;font-family:Inter,sans-serif">no preview yet</span>`;
             }}
           />
         </div>
       )}
 
-      {/* Card body */}
+      {/* Card */}
       <div style={{
         background: isOpen ? "#1C2128" : "#161B22",
         border: `1px solid ${isOpen ? "rgba(0,194,179,0.5)" : "#21262D"}`,
-        borderRadius: 12,
-        padding: "22px 22px 18px",
+        borderRadius: 12, padding: "22px 22px 18px",
         transition: "border-color 0.2s, background 0.2s, box-shadow 0.2s",
-        boxShadow: isOpen
-          ? "0 0 0 1px rgba(0,194,179,0.15)"
-          : hovered ? "0 4px 16px rgba(0,0,0,0.3)" : "none",
-        position: "relative",
-        overflow: "hidden",
+        boxShadow: isOpen ? "0 0 0 1px rgba(0,194,179,0.15)" : hovered ? "0 4px 16px rgba(0,0,0,0.3)" : "none",
+        position: "relative", overflow: "hidden",
       }}>
-        {/* Accent left bar */}
+        {/* Accent bar */}
         <div style={{
           position: "absolute", left: 0, top: 0, bottom: 0, width: 3,
-          background: "#00C2B3",
-          borderRadius: "3px 0 0 3px",
+          background: "#00C2B3", borderRadius: "3px 0 0 3px",
           transform: `scaleY(${isOpen || hovered ? 1 : 0})`,
-          transformOrigin: "bottom",
-          transition: "transform 0.22s ease",
+          transformOrigin: "bottom", transition: "transform 0.22s ease",
         }} />
 
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8 }}>
-          <h3 style={{ fontFamily: "'Space Grotesk'", fontSize: 15, fontWeight: 600, margin: 0, color: "#E8EDF2", lineHeight: 1.4 }}>
+          <h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 15, fontWeight: 600, margin: 0, color: "#E8EDF2", lineHeight: 1.4 }}>
             {project.title}
           </h3>
           <span style={{
             fontSize: 10, padding: "2px 8px", borderRadius: 999,
-            fontFamily: "'Space Grotesk'", fontWeight: 500, letterSpacing: "0.04em",
+            fontFamily: "'Space Grotesk', sans-serif", fontWeight: 500, letterSpacing: "0.04em",
             flexShrink: 0, marginLeft: 8,
-            ...statusStyle[project.status],
+            ...(statusStyle[project.status] ?? statusStyle["Various"]),
           }}>{project.status}</span>
         </div>
 
@@ -375,18 +318,20 @@ function ProjectCard({ project, isOpen, onToggle }: {
           {project.blurb}
         </p>
 
-        <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 14 }}>
-          {project.tags.map((t) => (
-            <span key={t} style={{
-              fontSize: 11, padding: "3px 10px", borderRadius: 999,
-              border: "1px solid #21262D", color: "#8B949E", background: "#0D1117",
-            }}>{t}</span>
-          ))}
-        </div>
+        {project.tags.length > 0 && (
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 14 }}>
+            {project.tags.map((t) => (
+              <span key={t} style={{
+                fontSize: 11, padding: "3px 10px", borderRadius: 999,
+                border: "1px solid #21262D", color: "#8B949E", background: "#0D1117",
+              }}>{t}</span>
+            ))}
+          </div>
+        )}
 
         <div style={{
           fontSize: 12, color: isOpen ? "#00C2B3" : "#8B949E",
-          fontFamily: "'Space Grotesk'", fontWeight: 600,
+          fontFamily: "'Space Grotesk', sans-serif", fontWeight: 600,
           letterSpacing: "0.03em", transition: "color 0.2s", userSelect: "none",
         }}>
           {isOpen ? "▲ collapse" : "▼ click to see more"}
@@ -397,7 +342,6 @@ function ProjectCard({ project, isOpen, onToggle }: {
 }
 
 // ─── PROJECTS GRID ───────────────────────────────────────────────────────────
-// Injects the expanded panel directly after the row containing the open card.
 function ProjectsGrid() {
   const [openId, setOpenId] = useState<number | null>(null);
   const COLS = 2;
@@ -409,8 +353,9 @@ function ProjectsGrid() {
     rows.push(projects.slice(i, i + COLS));
   }
 
-  const openRowIndex = openId !== null ? Math.floor(openId / COLS) : null;
-  const openProject = openId !== null ? projects.find((p) => p.id === openId)! : null;
+  const openIdx = openId !== null ? projects.findIndex((p) => p.id === openId) : -1;
+  const openRowIndex = openIdx >= 0 ? Math.floor(openIdx / COLS) : null;
+  const openProject = openIdx >= 0 ? projects[openIdx] : null;
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
@@ -453,7 +398,7 @@ export default function Page() {
         }
         *, *::before, *::after { box-sizing: border-box; }
         html, body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; margin: 0; }
-        h1,h2,h3,h4 { font-family: 'Space Grotesk', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; }
         .hero-grid {
           background-image:
             linear-gradient(var(--border) 1px, transparent 1px),
@@ -464,10 +409,11 @@ export default function Page() {
         a.inline-link:hover { text-decoration: underline; }
         .section-label {
           font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
-          color: var(--accent); font-family: 'Space Grotesk'; font-weight: 600; margin-bottom: 8px;
+          color: var(--accent); font-family: 'Space Grotesk', sans-serif;
+          font-weight: 600; margin-bottom: 8px;
         }
         @media (max-width: 540px) {
-          .projects-grid { grid-template-columns: 1fr !important; }
+          .two-col { grid-template-columns: 1fr !important; }
         }
         @media (prefers-reduced-motion: reduce) {
           * { transition: none !important; animation: none !important; }
@@ -481,7 +427,7 @@ export default function Page() {
           display: "flex", justifyContent: "space-between", alignItems: "center",
           padding: "24px 0", borderBottom: "1px solid var(--border)", marginBottom: 64,
         }}>
-          <span style={{ fontFamily: "'Space Grotesk'", fontWeight: 700, fontSize: 16 }}>LM</span>
+          <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 16 }}>LM</span>
           <div style={{ display: "flex", gap: 24 }}>
             {["Projects", "About", "Contact"].map((item) => (
               <a key={item} href={`#${item.toLowerCase()}`}
@@ -496,7 +442,7 @@ export default function Page() {
         <section style={{ marginBottom: 80 }}>
           <div className="hero-grid" style={{
             borderRadius: 16, border: "1px solid var(--border)",
-            padding: "48px 40px", marginBottom: 40, position: "relative", overflow: "hidden",
+            padding: "48px 40px", position: "relative", overflow: "hidden",
           }}>
             <div style={{
               position: "absolute", bottom: -60, right: -60, width: 200, height: 200,
@@ -517,13 +463,12 @@ export default function Page() {
               <a href="#projects" style={{
                 border: "1px solid var(--border)", borderRadius: 10, padding: "10px 20px",
                 color: "var(--text)", textDecoration: "none",
-                fontFamily: "'Space Grotesk'", fontSize: 14, fontWeight: 500,
+                fontFamily: "'Space Grotesk', sans-serif", fontSize: 14, fontWeight: 500,
               }}>View Projects</a>
               <a href="mailto:lachlanmccreanney@gmail.com" style={{
                 borderRadius: 10, padding: "10px 20px",
-                background: "var(--accent)", color: "#0D1117",
-                textDecoration: "none", fontFamily: "'Space Grotesk'",
-                fontSize: 14, fontWeight: 600,
+                background: "var(--accent)", color: "#0D1117", textDecoration: "none",
+                fontFamily: "'Space Grotesk', sans-serif", fontSize: 14, fontWeight: 600,
               }}>Contact Me</a>
             </div>
           </div>
@@ -551,7 +496,7 @@ export default function Page() {
             I majored in Software Development at{" "}
             <span style={{ color: "var(--text)" }}>Auckland University of Technology (AUT)</span>{" "}
             for a Bachelor of Computer and Information Sciences, with minors in Creative Technology and Digital Communications.
-            I've used an array of tools and skills across my projects — from Blender and Cura for 3D work,
+            I've used an array of tools across my projects — from Blender and Cura for 3D work,
             to web apps built with Python or Node.js and the OpenAI API.
             My focus is building interactive, engaging applications with a particular interest in{" "}
             <span style={{ color: "var(--text)" }}>AI</span>,{" "}
