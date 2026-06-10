@@ -60,7 +60,7 @@ Designed in Blender and sliced with Cura.
 What I learned: [add what you learned here]
 Challenges: [add any challenges you faced]`,
     images: ["/media/Jeff_The_Shark/jeff2.jpg", "/media/Jeff_The_Shark/jeff1.jpg"], 
-    video: "/media/Jeff_The_Shark/jeff.mp4", // e.g. "/videos/jeff-demo.mp4"
+    video: ["media/Jeff_The_Shark/jeff3.mp4"],
   },
   {
     id: 3,
@@ -103,7 +103,7 @@ Challenges: [add any challenges you faced]`,
 
 
     {
-    id: 4,
+    id: 5,
     title: "Various Projects",
     blurb: "A collection of small ideas/creations both from university and in my own time",
     tags: null,
@@ -120,6 +120,29 @@ What I learned: [add what you learned here]
 Challenges: [add any challenges you faced]`,
     images: null,
     video: ["media/Various/vid1", "media/Various/vid2","media/Various/vid3"],
+  },
+
+
+
+
+   {
+    id: 6,
+    title: "Webflow",
+    blurb: "A mobile app built with Expo/React Native, using ngrok + Node.js as a local server and OpenAI for translation.",
+    tags: ["OpenAI", "Node.js", "Expo", "React Native"],
+    href: null,
+    status: "Mobile App",
+    previewImage: ["/media/Webflow/canvas.png", "/media/Webflow/canvas2.png"],
+    detail: `[Replace this with your own description]
+
+A mobile application built with Expo and React Native that translates text between languages 
+using the OpenAI API. The phone connects to a Node.js server running locally on my laptop, 
+tunnelled via ngrok — making it accessible from the mobile device without deploying to the cloud.
+
+What I learned: [add what you learned here]
+Challenges: [add any challenges you faced]`,
+    images: ["/images/translator-1.png", "/images/translator-2.png"],
+    video: ["/media/Webflow/canvas3.mp4"],
   },
 ];
 
