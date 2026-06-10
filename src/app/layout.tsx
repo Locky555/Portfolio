@@ -32,10 +32,11 @@ Challenges: ...`,
     href: "https://github.com/yourname/rag-bcis-bot",
     status: "GitHub",
     previewImage: "/images/chatbot-preview.png",
-    detail: `Replace with your description.
+    detail: `This AI Chatbot was my major contribution to the final research and development project at AUT, as part of the BCIS Course Planner. It was my first chatbot powered by a real LLM, run entirely locally on my own hardware. It was designed as a course and study advisor for computer science students — reading from a PDF database of AUT CompSci courses and responding to prompts like generating course plans, listing prerequisites, and answering general study questions.
 
-What I learned: ...
-Challenges: ...`,
+The project came with serious challenges: hardware constraints, AI hallucinations, and a steep learning curve across many tools and frameworks. Through persistence, upskilling, and collaboration with peers, I developed guardrails to keep the model on track and produce reliable output. This experience gave me a deep understanding of how AI "thinks", how to manage it, and how to get useful results from it.
+
+This project sparked my ongoing interest in AI integration and raised compelling ethical questions around AI use — particularly how locally-run models can be a powerful and privacy-conscious alternative to large cloud-based language models.`,
     images: ["/images/chatbot-1.png", "/images/chatbot-2.png"],
     videos: ["/media/AI_Chatbot/chatbot.mp4"],
   },
@@ -47,10 +48,11 @@ Challenges: ...`,
     href: null,
     status: "Physical",
     previewImage: "/media/Jeff_The_Shark/jeff1.jpg",
-    detail: `Replace with your description.
+    detail: `Jeff the Shark was one of my most ambitious personal projects, inspired by the Marvel character of the same name. 3D printing is a hobby of mine, and I wanted to take it further by incorporating an Arduino audio controller into the base to create a talking figurine. The result is a model that plays audio on command — bringing Jeff to life.
 
-What I learned: ...
-Challenges: ...`,
+Along the way I learned how to use Cura to prepare and edit 3D models for printing, as well as basic soldering and rudimentary circuitry to wire up the audio module. 3D printing comes with its own set of challenges — particularly the time investment and the potential for failed prints. Patience and persistence paid off, and I'm really happy with how it turned out.
+
+(The Jeff the Shark 3D model was purchased from CGTrader.)`,
     images: ["/media/Jeff_The_Shark/jeff1.jpg", "/media/Jeff_The_Shark/jeff2.jpg"],
     videos: ["/media/Jeff_The_Shark/jeff3.mp4"],
   },
@@ -62,10 +64,9 @@ Challenges: ...`,
     href: null,
     status: "Design",
     previewImage: "/media/Figma/tui.png",
-    detail: `Replace with your description.
+    detail: `The Māori Language App was a project for my Digital Communications minor, giving me a solid grounding in UI/UX design principles — how typography, buttons, transitions, and colour can work together to create an engaging experience. It pushed me to step back from just making something functional and think carefully about how to make it feel good to use.
 
-What I learned: ...
-Challenges: ...`,
+The prototype features lessons for all skill levels, including listening exercises, reading activities, and gamified quizzes with visual feedback. This project aligns strongly with my goal of incorporating more Māori influence into technology, and I'd love to develop the concept further into a fully working application.`,
     images: ["/media/Figma/tui.png"],
     videos: ["/media/Figma/figma1.mp4"],
   },
@@ -77,10 +78,9 @@ Challenges: ...`,
     href: null,
     status: "Mobile App",
     previewImage: null,
-    detail: `Replace with your description.
+    detail: `The AI Language Translator came out of a real problem — wanting to communicate better with my Chilean-Spanish speaking friends and family. Standard translation apps struggle with Chilean dialects and slang, often producing technically correct but contextually wrong results. I wanted something smarter.
 
-What I learned: ...
-Challenges: ...`,
+Built with Expo and React Native, the app sends translation requests to a Node.js server running locally on my laptop, tunnelled to the internet via ngrok. This was a great exercise in integrating APIs into a working mobile application and understanding how to move a project from a local prototype to something accessible over the web. It's still a work in progress and something I plan to keep developing.`,
     images: [],
     videos: [],
   },
@@ -92,25 +92,25 @@ Challenges: ...`,
     href: null,
     status: "Various",
     previewImage: null,
-    detail: `Replace with your description.`,
+    detail: `A mix of smaller experiments and creative projects made throughout my studies and in my own time — including motion graphics composites, Unity game prototypes, and 3D work in Blender.`,
     images: [],
     videos: [
-      "/media/Various/LMcCreanney_MotionGraphicsComposite.mp4",
-      "/media/Various/Project10 - level 2 - Windows, Mac, Linux - Unity 2022.3.43f1_ _DX11_ 2024-09-23 01-03-01.mp4",
+      "/media/Various/vid1.mp4",
+      "/media/Various/vid2.mp4",
+      "/media/Various/vid.mp4",
     ],
   },
   {
     id: 6,
-    title: "Webflow",
+    title: "Webflow — Minty3D",
     blurb: "Web design and interactive UI experiments built in Webflow.",
     tags: ["Webflow", "UI/UX Design", "Web Design"],
     href: null,
     status: "Design",
     previewImage: "/media/Webflow/canvas.png",
-    detail: `Replace with your description.
+    detail: `Minty3D is a conceptual 3D printing website built as part of a Digital Communications assignment to learn Webflow. I drew on my development background to push beyond the basics — implementing a YouTube video carousel scroll and other interactive features using small amounts of custom code.
 
-What I learned: ...
-Challenges: ...`,
+The project was a great opportunity to combine programming and design thinking in a short sprint with unfamiliar software. I researched common patterns from real startup websites, critiqued what worked and what didn't, and used that to inform my own design decisions. It reinforced how much thought goes into making an interface feel polished and intuitive.`,
     images: ["/media/Webflow/canvas.png", "/media/Webflow/canvas2.png"],
     videos: ["/media/Webflow/canvas3.mp4"],
   },
@@ -118,11 +118,11 @@ Challenges: ...`,
 
 // ─── STATUS BADGE STYLES ─────────────────────────────────────────────────────
 const statusStyle: Record<string, React.CSSProperties> = {
-  GitHub:     { background: "rgba(0,194,179,0.1)",   color: "#00C2B3", border: "1px solid rgba(0,194,179,0.3)" },
-  Physical:   { background: "rgba(251,146,60,0.1)",  color: "#fb923c", border: "1px solid rgba(251,146,60,0.3)" },
-  Design:     { background: "rgba(167,139,250,0.1)", color: "#a78bfa", border: "1px solid rgba(167,139,250,0.3)" },
+  GitHub:       { background: "rgba(0,194,179,0.1)",   color: "#00C2B3", border: "1px solid rgba(0,194,179,0.3)" },
+  Physical:     { background: "rgba(251,146,60,0.1)",  color: "#fb923c", border: "1px solid rgba(251,146,60,0.3)" },
+  Design:       { background: "rgba(167,139,250,0.1)", color: "#a78bfa", border: "1px solid rgba(167,139,250,0.3)" },
   "Mobile App": { background: "rgba(96,165,250,0.1)",  color: "#60a5fa", border: "1px solid rgba(96,165,250,0.3)" },
-  Various:    { background: "rgba(251,191,36,0.1)",  color: "#fbbf24", border: "1px solid rgba(251,191,36,0.3)" },
+  Various:      { background: "rgba(251,191,36,0.1)",  color: "#fbbf24", border: "1px solid rgba(251,191,36,0.3)" },
 };
 
 // ─── EXPANDED PANEL ──────────────────────────────────────────────────────────
@@ -163,7 +163,6 @@ function ExpandedPanel({ project, onClose }: { project: typeof projects[0]; onCl
         .media-scroll::-webkit-scrollbar-thumb { background: #21262D; border-radius: 4px; }
       `}</style>
 
-      {/* Close button */}
       <button onClick={onClose} aria-label="Close" style={{
         position: "absolute", top: 18, right: 18,
         background: "none", border: "none", cursor: "pointer",
@@ -200,18 +199,17 @@ function ExpandedPanel({ project, onClose }: { project: typeof projects[0]; onCl
           <div className="media-scroll">
             {project.images.map((src, i) => (
               <div key={i} style={{
-                width: 240, height: 150, borderRadius: 8, overflow: "hidden", flexShrink: 0,
+                maxWidth: 480, borderRadius: 8, overflow: "hidden", flexShrink: 0,
                 background: "#0D1117", border: "1px solid #21262D",
-                display: "flex", alignItems: "center", justifyContent: "center",
               }}>
                 <img
                   src={src}
                   alt={`${project.title} screenshot ${i + 1}`}
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  style={{ display: "block", width: "100%" }}
                   onError={(e) => {
                     const el = e.target as HTMLImageElement;
                     el.style.display = "none";
-                    el.parentElement!.innerHTML = `<span style="color:#8B949E;font-size:12px;font-family:Inter,sans-serif">image coming soon</span>`;
+                    el.parentElement!.innerHTML = `<span style="color:#8B949E;font-size:12px;font-family:Inter,sans-serif;padding:16px;display:block">image coming soon</span>`;
                   }}
                 />
               </div>
@@ -254,7 +252,6 @@ function ProjectCard({ project, isOpen, onToggle }: {
       onMouseLeave={() => setHovered(false)}
       onClick={onToggle}
     >
-      {/* Hover preview */}
       {hovered && !isOpen && project.previewImage && (
         <div style={{
           position: "absolute", bottom: "calc(100% + 8px)", left: "50%",
@@ -285,7 +282,6 @@ function ProjectCard({ project, isOpen, onToggle }: {
         </div>
       )}
 
-      {/* Card */}
       <div style={{
         background: isOpen ? "#1C2128" : "#161B22",
         border: `1px solid ${isOpen ? "rgba(0,194,179,0.5)" : "#21262D"}`,
@@ -294,7 +290,6 @@ function ProjectCard({ project, isOpen, onToggle }: {
         boxShadow: isOpen ? "0 0 0 1px rgba(0,194,179,0.15)" : hovered ? "0 4px 16px rgba(0,0,0,0.3)" : "none",
         position: "relative", overflow: "hidden",
       }}>
-        {/* Accent bar */}
         <div style={{
           position: "absolute", left: 0, top: 0, bottom: 0, width: 3,
           background: "#00C2B3", borderRadius: "3px 0 0 3px",
@@ -422,7 +417,6 @@ export default function Page() {
 
       <main style={{ maxWidth: 720, margin: "0 auto", padding: "0 24px" }}>
 
-        {/* Nav */}
         <nav style={{
           display: "flex", justifyContent: "space-between", alignItems: "center",
           padding: "24px 0", borderBottom: "1px solid var(--border)", marginBottom: 64,
@@ -438,7 +432,6 @@ export default function Page() {
           </div>
         </nav>
 
-        {/* Hero */}
         <section style={{ marginBottom: 80 }}>
           <div className="hero-grid" style={{
             borderRadius: 16, border: "1px solid var(--border)",
@@ -476,7 +469,6 @@ export default function Page() {
 
         <hr style={{ border: "none", borderTop: "1px solid var(--border)", marginBottom: 64 }} />
 
-        {/* Projects */}
         <section id="projects" style={{ marginBottom: 80 }}>
           <p className="section-label">Work</p>
           <h2 style={{ fontSize: 22, fontWeight: 600, margin: "0 0 8px" }}>Selected Projects</h2>
@@ -488,7 +480,6 @@ export default function Page() {
 
         <hr style={{ border: "none", borderTop: "1px solid var(--border)", marginBottom: 64 }} />
 
-        {/* About */}
         <section id="about" style={{ marginBottom: 80 }}>
           <p className="section-label">Background</p>
           <h2 style={{ fontSize: 22, fontWeight: 600, margin: "0 0 16px" }}>About</h2>
@@ -508,7 +499,6 @@ export default function Page() {
 
         <hr style={{ border: "none", borderTop: "1px solid var(--border)", marginBottom: 64 }} />
 
-        {/* Contact */}
         <section id="contact" style={{ marginBottom: 80 }}>
           <p className="section-label">Get in Touch</p>
           <h2 style={{ fontSize: 22, fontWeight: 600, margin: "0 0 16px" }}>Contact</h2>
@@ -520,7 +510,6 @@ export default function Page() {
           </p>
         </section>
 
-        {/* Footer */}
         <footer style={{
           borderTop: "1px solid var(--border)", paddingTop: 24, paddingBottom: 48,
           fontSize: 13, color: "var(--muted)",
