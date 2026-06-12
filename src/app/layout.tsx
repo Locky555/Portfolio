@@ -18,7 +18,7 @@ const projects = [
     status: "GitHub",
     previewImage: "/media/Course_Planner/image.png",
     detail: `The course planner app was the main assignment for my Research and Development group project at AUT, in addition to my Chatbot that was implemented in later I turned our figma (interface design tool) prototype into a working User Interface. After the user inputs their degree type eg. Double Major - Compsci & Data Analysis it would generate the most optimal course plan with lists of courses per year in order to meet the requirements of 160 points to graduate and covering all prerequisites, mandatory courses and fitting in the correct semesters/time slots getting information from json files with each combination of courses. The course "blocks" could then be rearranged, deleted or swapped out to be more cuztomizable for the user. There was also a "perequisite checker" a pop up that alerted you if your edited course plan met all the requirements and what needed to be changed/added.`,
-    images: ["/media/Course_Planner/image.png", "/images/Course_Planner/image2.png", "image/Course_Planner/image3.png"],
+    images: ["/media/Course_Planner/image.png", "/media/Course_Planner/image2.png", "media/Course_Planner/image3.png"],
     videos: [],
   },
   {
