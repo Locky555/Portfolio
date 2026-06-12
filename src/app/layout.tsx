@@ -16,9 +16,9 @@ const projects = [
     tags: ["Next.js", "TypeScript", "NestJS"],
     href: "https://github.com/yourname/course-planner",
     status: "GitHub",
-    previewImage: "/images/course-planner-preview.png",
+    previewImage: "/media/Course_Planner/image.png",
     detail: `The course planner app was the main assignment for my Research and Development group project at AUT, in addition to my Chatbot that was implemented in later I turned our figma (interface design tool) prototype into a working User Interface. After the user inputs their degree type eg. Double Major - Compsci & Data Analysis it would generate the most optimal course plan with lists of courses per year in order to meet the requirements of 160 points to graduate and covering all prerequisites, mandatory courses and fitting in the correct semesters/time slots getting information from json files with each combination of courses. The course "blocks" could then be rearranged, deleted or swapped out to be more cuztomizable for the user. There was also a "perequisite checker" a pop up that alerted you if your edited course plan met all the requirements and what needed to be changed/added.`,
-    images: ["/images/course-planner-1.png", "/images/course-planner-2.png"],
+    images: ["/media/Course_Planner/image.png", "/images/Course_Planner/image2.png", "image/Course_Planner/image3.png"],
     videos: [],
   },
   {
@@ -34,7 +34,7 @@ const projects = [
 The project came with serious challenges: hardware constraints, AI hallucinations, and a steep learning curve across many tools and frameworks. Through persistence, upskilling, and collaboration with peers, I developed guardrails to keep the model on track and produce reliable output. This experience gave me a deep understanding of how AI "thinks", how to manage it, and how to get useful results from it.
 
 This project sparked my ongoing interest in AI integration and raised compelling ethical questions around AI use — particularly how locally-run models can be a powerful and privacy-conscious alternative to large cloud-based language models.`,
-    images: ["/media/chatbot1.png", "/media/chatbot2.png", "/media/chatbot3.JPG"],
+    images: ["/media/AI_Chatbot/chatbot1.png", "/media/AI_Chatbot/chatbot2.png", "/media/AI_Chatbot/chatbot3.JPG"],
     videos: ["/media/AI_Chatbot/chatbot.mp4"],
   },
   {
