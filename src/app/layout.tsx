@@ -69,16 +69,16 @@ The prototype features lessons for all skill levels, including listening exercis
   },
   {
     id: 4,
-    title: "AI Language Translator",
+    title: "AI Chilean Language Translator",
     blurb: "A mobile app built with Expo/React Native, using ngrok + Node.js as a local server and OpenAI for translation.",
     tags: ["OpenAI", "Node.js", "Expo", "React Native"],
     href: null,
     status: "Mobile App",
-    previewImage: null,
-    detail: `The AI Language Translator came out of a real problem — wanting to communicate better with my Chilean-Spanish speaking friends and family. Standard translation apps struggle with Chilean dialects and slang, often producing technically correct but contextually wrong results. I wanted something smarter.
+    previewImage: "/media/Translator/t1.jpg",
+    detail: `The AI Language Translator came out of a real problem I faced, wanting to communicate better with my Chilean-Spanish speaking friends and family. Standard translation apps struggle with Chilean dialects and slang, often producing technically correct but contextually wrong results. I wanted something smarter.
 
 Built with Expo and React Native, the app sends translation requests to a Node.js server running locally on my laptop, tunnelled to the internet via ngrok. This was a great exercise in integrating APIs into a working mobile application and understanding how to move a project from a local prototype to something accessible over the web. It's still a work in progress and something I plan to keep developing.`,
-    images: [],
+    images: ["/media/Translator/t1.jpg", "/media/Translator/t2.jpg", "/media/Translator/t3.jpg", "/media/Translator/t4.jpg"],
     videos: [],
   },
   {
@@ -111,7 +111,26 @@ The project was a great opportunity to combine programming and design thinking i
     images: ["/media/Webflow/canvas.png", "/media/Webflow/canvas2.png"],
     videos: ["/media/Webflow/canvas3.mp4"],
   },
+
+
+
+  {
+  id: 7,
+  title: "TrashTalk",
+  blurb: "First Year Creative Technology Project",
+  tags: ["Arduino", "Processing Code", "Animation"],
+  href: null,
+  status: "GitHub",
+  previewImage: "/media/TrashTalk/preview.png",
+  detail: `This was my first major programming assignment at university during my time in the Bachelors of Creative Technology. This was a semester long group project that taught us how to go through the creative design process, brainstorming, sketching, prototyping and developing. This concept was a "game-ifie" or arcade-like rubbish bin, with a grumpy polluting factory charicature. The incentive was to encourage peope to recycle in a fun way by getting people to throw their rubbish at him, knocking him down and prompting people about recycling/environmental facts with the target demographic being a younger audience.
+  We did struggle with the scope of this project as it was our first time using arduino, using processing code language and was very ambitious. We sadlt didnt end up fully completing the project and were limited by the hardware we could afford. I designed the animation in Blender with cell shading after many concept designs and student surveys, many of the various character animations did not make it into the LED screen due to lack of knowledge and hardware limitations, our workaround for this was a stopmotion technique and just had multiple frames of the walking animation cycle through. This was overall a great team-bonding experience which created many friends, developed my entreprenuerial or product design skills a well as my ability in programming and thinking out of the box ways to overcome obstacles.`,
+  images: ["/media/TrashTalk/screenshot1.png"],
+  videos: [],
+},
 ];
+
+
+
 
 // ─── STATUS BADGE STYLES ─────────────────────────────────────────────────────
 const statusStyle: Record<string, React.CSSProperties> = {
