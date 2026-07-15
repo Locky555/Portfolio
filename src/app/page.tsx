@@ -292,7 +292,7 @@ export default function Page() {
                 <>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
                     <h3 style={{ fontSize: 15, fontWeight: 600, margin: 0, lineHeight: 1.4 }}>{p.title}</h3>
-                   {/*} <span className={`status-badge ${statusColors[p.status]}`}>{p.status}</span> */}
+                   <span className={`status-badge ${statusColors[p.status]}`}>{p.status}</span> 
                   </div>
                   <p style={{ fontSize: 13, color: "var(--muted)", lineHeight: 1.65, margin: "0 0 16px" }}>{p.blurb}</p>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
