@@ -15,7 +15,7 @@ const projects = [
     blurb: "Full-stack course discovery platform with search, filters, and article pages.",
     tags: ["Next.js", "TypeScript", "NestJS"],
     href: "https://github.com/yourname/course-planner",
-    status: "GitHub",
+    status: [],
     previewImage: "/media/Course_Planner/image.png",
     detail: `The course planner app was the main assignment for my Research and Development group project at AUT, in addition to my Chatbot that was implemented in later I turned our figma (interface design tool) prototype into a working User Interface. After the user inputs their degree type eg. Double Major - Compsci & Data Analysis it would generate the most optimal course plan with lists of courses per year in order to meet the requirements of 160 points to graduate and covering all prerequisites, mandatory courses and fitting in the correct semesters/time slots getting information from json files with each combination of courses. The course "blocks" could then be rearranged, deleted or swapped out to be more cuztomizable for the user. There was also a "perequisite checker" a pop up that alerted you if your edited course plan met all the requirements and what needed to be changed/added.`,
     images: ["/media/Course_Planner/image.png", "/media/Course_Planner/image2.png", "media/Course_Planner/image3.png"],
@@ -27,7 +27,7 @@ const projects = [
     blurb: "FAISS vector store with PDF ingestion, Flask API backend, and local LLM inference via Ollama.",
     tags: ["Python", "FAISS", "Flask", "Ollama"],
     href: "https://github.com/yourname/rag-bcis-bot",
-    status: "GitHub",
+    status: [],
     previewImage: "/media/AI_Chatbot/chatbot1.png",
     detail: `This AI Chatbot was my major contribution to the final research and development project at AUT, as part of the Course Planner. It was my first chatbot powered by a real LLM being the deepseek-16b ollama model, run entirely locally on my own hardware. It was designed as a course and study advisor for computer science students - reading from a PDF database of AUT CompSci courses and responding to prompts like generating course plans, listing prerequisites, and answering general study questions.
 
@@ -437,7 +437,7 @@ export default function Page() {
           display: "flex", justifyContent: "space-between", alignItems: "center",
           padding: "24px 0", borderBottom: "1px solid var(--border)", marginBottom: 64,
         }}>
-          <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 16 }}>LM</span>
+          <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 16 }}>Lachlan McCreanney's Portfolio</span>
           <div style={{ display: "flex", gap: 24 }}>
             {["Projects", "About", "Contact"].map((item) => (
               <a key={item} href={`#${item.toLowerCase()}`}
