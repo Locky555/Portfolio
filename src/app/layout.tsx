@@ -234,7 +234,7 @@ function ExpandedPanel({ project, onClose }: { project: typeof projects[0]; onCl
         </div>
       )}
 
-      {/* Tags + GitHub link 
+       Tags + GitHub link 
       <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center" }}>
         {project.tags.map((t) => (
           <span key={t} style={{
@@ -242,6 +242,8 @@ function ExpandedPanel({ project, onClose }: { project: typeof projects[0]; onCl
             border: "1px solid #21262D", color: "#8B949E", background: "#0D1117",
           }}>{t}</span>
         ))}
+      
+      {/*
         {project.href && (
           <a href={project.href} target="_blank" rel="noopener noreferrer" style={{
             marginLeft: "auto", fontSize: 13, color: "#00C2B3",
@@ -532,7 +534,7 @@ export default function Page() {
           display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 8,
         }}>
           <span>© {new Date().getFullYear()} Lachlan McCreanney</span>
-          <span>Built with Next.js · Deployed on Vercel</span>
+          <span>Built with Next.js - Deployed on Vercel</span>
         </footer>
 
       </main>
