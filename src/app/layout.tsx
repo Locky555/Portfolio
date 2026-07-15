@@ -15,7 +15,7 @@ const projects = [
     blurb: "Full-stack course discovery platform with search, filters, and article pages.",
     tags: ["Next.js", "TypeScript", "NestJS"],
     href: "https://github.com/yourname/course-planner",
-    status: [],
+    status: "",
     previewImage: "/media/Course_Planner/image.png",
     detail: `The course planner app was the main assignment for my Research and Development group project at AUT, in addition to my Chatbot that was implemented in later I turned our figma (interface design tool) prototype into a working User Interface. After the user inputs their degree type eg. Double Major - Compsci & Data Analysis it would generate the most optimal course plan with lists of courses per year in order to meet the requirements of 160 points to graduate and covering all prerequisites, mandatory courses and fitting in the correct semesters/time slots getting information from json files with each combination of courses. The course "blocks" could then be rearranged, deleted or swapped out to be more cuztomizable for the user. There was also a "perequisite checker" a pop up that alerted you if your edited course plan met all the requirements and what needed to be changed/added.`,
     images: ["/media/Course_Planner/image.png", "/media/Course_Planner/image2.png", "media/Course_Planner/image3.png"],
@@ -27,7 +27,7 @@ const projects = [
     blurb: "FAISS vector store with PDF ingestion, Flask API backend, and local LLM inference via Ollama.",
     tags: ["Python", "FAISS", "Flask", "Ollama"],
     href: "https://github.com/yourname/rag-bcis-bot",
-    status: [],
+    status: "",
     previewImage: "/media/AI_Chatbot/chatbot1.png",
     detail: `This AI Chatbot was my major contribution to the final research and development project at AUT, as part of the Course Planner. It was my first chatbot powered by a real LLM being the deepseek-16b ollama model, run entirely locally on my own hardware. It was designed as a course and study advisor for computer science students - reading from a PDF database of AUT CompSci courses and responding to prompts like generating course plans, listing prerequisites, and answering general study questions.
 
@@ -120,7 +120,7 @@ The project was a great opportunity to combine programming and design thinking i
   blurb: "First Year Creative Technology Project",
   tags: ["Arduino", "Processing Code", "Animation"],
   href: null,
-  status: "GitHub",
+  status: "",
   previewImage: "/media/TrashTalk/preview.png",
   detail: `This was my first major programming assignment at university during my time in the Bachelors of Creative Technology. This was a semester long group project that taught us how to go through the creative design process, brainstorming, sketching, prototyping and developing. This concept was a "game-ifie" or arcade-like rubbish bin, with a grumpy polluting factory charicature. The incentive was to encourage peope to recycle in a fun way by getting people to throw their rubbish at him, knocking him down and prompting people about recycling/environmental facts with the target demographic being a younger audience.
   We did struggle with the scope of this project as it was our first time using arduino, using processing code language and was very ambitious. We sadlt didnt end up fully completing the project and were limited by the hardware we could afford. I designed the animation in Blender with cell shading after many concept designs and student surveys, many of the various character animations did not make it into the LED screen due to lack of knowledge and hardware limitations, our workaround for this was a stopmotion technique and just had multiple frames of the walking animation cycle through. This was overall a great team-bonding experience which created many friends, developed my entreprenuerial or product design skills a well as my ability in programming and thinking out of the box ways to overcome obstacles.`,
