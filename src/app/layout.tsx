@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import type { CSSProperties } from "react";
 
 // ─── PROJECT DATA ────────────────────────────────────────────────────────────
 // RULES:
@@ -8,7 +9,20 @@ import { useState } from "react";
 //   videos       : always an array (use [] if none)
 //   tags         : always an array (use [] if none)
 
-const projects = [
+type Project = {
+  id: number;
+  title: string;
+  blurb: string;
+  tags: string[];
+  href: string | null;
+  status: string;
+  previewImage: string | null;
+  detail: string;
+  images: string[];
+  videos: string[];
+};
+
+const projects: Project[] = [
   {
     id: 0,
     title: "AUT Course Planner Web App",
@@ -18,7 +32,7 @@ const projects = [
     status: "",
     previewImage: "/media/Course_Planner/image.png",
     detail: `The course planner app was the main assignment for my Research and Development group project at AUT, in addition to my Chatbot that was implemented in later I turned our figma (interface design tool) prototype into a working User Interface. After the user inputs their degree type eg. Double Major - Compsci & Data Analysis it would generate the most optimal course plan with lists of courses per year in order to meet the requirements of 160 points to graduate and covering all prerequisites, mandatory courses and fitting in the correct semesters/time slots getting information from json files with each combination of courses. The course "blocks" could then be rearranged, deleted or swapped out to be more cuztomizable for the user. There was also a "perequisite checker" a pop up that alerted you if your edited course plan met all the requirements and what needed to be changed/added.`,
-    images: ["/media/Course_Planner/image.png", "/media/Course_Planner/image2.png", "media/Course_Planner/image3.png"],
+    images: ["/media/Course_Planner/image.png", "/media/Course_Planner/image2.png", "/media/Course_Planner/image3.png"],
     videos: [],
   },
   {
@@ -319,12 +333,21 @@ function ProjectCard({ project, isOpen, onToggle }: {
           <h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 15, fontWeight: 600, margin: 0, color: "#E8EDF2", lineHeight: 1.4 }}>
             {project.title}
           </h3>
-          <span style={{
-            fontSize: 10, padding: "2px 8px", borderRadius: 999,
-            fontFamily: "'Space Grotesk', sans-serif", fontWeight: 500, letterSpacing: "0.04em",
-            flexShrink: 0, marginLeft: 8,
-            ...(statusStyle[project.status] ?? statusStyle["Various"]),
-          }}>{project.status}</span>
+          {project.status && (
+  <span style={{
+    fontSize: 10, 
+    padding: "2px 8px", 
+    borderRadius: 999,
+    fontFamily: "'Space Grotesk', sans-serif",
+    fontWeight: 500,
+    letterSpacing: "0.04em",
+    flexShrink: 0,
+    marginLeft: 8,
+    ...(statusStyle[project.status] ?? statusStyle["Various"]),
+  }}>
+    {project.status}
+  </span>
+)}
         </div>
 
         <p style={{ fontSize: 13, color: "#8B949E", lineHeight: 1.65, margin: "0 0 14px" }}>

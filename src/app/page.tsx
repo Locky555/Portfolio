@@ -26,7 +26,7 @@ const projects = [
     status: "Physical",
   },
   {
-    title: "Māori Language App - Figma Demo",
+    title: "Māori Language App Figma Demo",
     blurb:
       "A high-fidelity Figma prototype for a Te Reo Māori learning app, exploring gamification and cultural UX.",
     tags: ["Figma", "UI/UX Design", "Prototyping"],
@@ -224,7 +224,7 @@ export default function Page() {
           marginBottom: 64,
         }}>
           <span style={{ fontFamily: "'Space Grotesk'", fontWeight: 700, fontSize: 16, color: "var(--text)" }}>
-            LM
+            Lachlan McCreanney's Portfolio
           </span>
           <div style={{ display: "flex", gap: 24 }}>
             {["Projects", "About", "Contact"].map((item) => (
