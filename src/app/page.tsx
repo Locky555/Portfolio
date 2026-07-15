@@ -10,7 +10,7 @@ const projects = [
     status: "GitHub",
   },
   {
-    title: "AI Chatbot — Ollama Deepseek + RAG",
+    title: "AI Chatbot - Ollama Deepseek + RAG",
     blurb:
       "FAISS vector store with PDF ingestion, a Flask API backend, and local LLM inference via Ollama.",
     tags: ["Python", "FAISS", "Flask", "Ollama"],
@@ -26,7 +26,7 @@ const projects = [
     status: "Physical",
   },
   {
-    title: "Māori Language App — Figma Demo",
+    title: "Māori Language App - Figma Demo",
     blurb:
       "A high-fidelity Figma prototype for a Te Reo Māori learning app, exploring gamification and cultural UX.",
     tags: ["Figma", "UI/UX Design", "Prototyping"],
@@ -292,7 +292,7 @@ export default function Page() {
                 <>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
                     <h3 style={{ fontSize: 15, fontWeight: 600, margin: 0, lineHeight: 1.4 }}>{p.title}</h3>
-                    <span className={`status-badge ${statusColors[p.status]}`}>{p.status}</span>
+                   {/*} <span className={`status-badge ${statusColors[p.status]}`}>{p.status}</span> */}
                   </div>
                   <p style={{ fontSize: 13, color: "var(--muted)", lineHeight: 1.65, margin: "0 0 16px" }}>{p.blurb}</p>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
@@ -331,7 +331,7 @@ export default function Page() {
             <span style={{ color: "var(--text)" }}>Auckland University of Technology (AUT)</span>{" "}
             for a Bachelor of Computer and Information Sciences, with minors in Creative Technology and Digital Communications.
             I have used an array of software and skills during my projects from Blender, Cura for 3D printing, web apps using python or node.js and openAI API's.
-            My focus is building interactive, engaging applications — with a particular interest in{" "}
+            My focus is building interactive, engaging applications - with a particular interest in{" "}
             <span style={{ color: "var(--text)" }}>AI</span>,{" "}
             <span style={{ color: "var(--text)" }}>web design</span>,{" "}
             <span style={{ color: "var(--text)" }}>physical computing</span>, and{" "}
