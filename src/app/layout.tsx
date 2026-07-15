@@ -23,17 +23,17 @@ const projects = [
   },
   {
     id: 1,
-    title: "AI Chatbot — Ollama Deepseek + RAG",
+    title: "AI Chatbot - Ollama Deepseek + RAG",
     blurb: "FAISS vector store with PDF ingestion, Flask API backend, and local LLM inference via Ollama.",
     tags: ["Python", "FAISS", "Flask", "Ollama"],
     href: "https://github.com/yourname/rag-bcis-bot",
     status: "GitHub",
     previewImage: "/media/AI_Chatbot/chatbot1.png",
-    detail: `This AI Chatbot was my major contribution to the final research and development project at AUT, as part of the Course Planner. It was my first chatbot powered by a real LLM being the deepseek-16b ollama model, run entirely locally on my own hardware. It was designed as a course and study advisor for computer science students — reading from a PDF database of AUT CompSci courses and responding to prompts like generating course plans, listing prerequisites, and answering general study questions.
+    detail: `This AI Chatbot was my major contribution to the final research and development project at AUT, as part of the Course Planner. It was my first chatbot powered by a real LLM being the deepseek-16b ollama model, run entirely locally on my own hardware. It was designed as a course and study advisor for computer science students - reading from a PDF database of AUT CompSci courses and responding to prompts like generating course plans, listing prerequisites, and answering general study questions.
 
 The project came with serious challenges: hardware constraints, AI hallucinations, and a steep learning curve across many tools and frameworks. Through persistence, upskilling, and collaboration with peers, I developed guardrails to keep the model on track and produce reliable output. This experience gave me a deep understanding of how AI "thinks", how to manage it, and how to get useful results from it.
 
-This project sparked my ongoing interest in AI integration and raised compelling ethical questions around AI use — particularly how locally-run models can be a powerful and privacy-conscious alternative to large cloud-based language models.`,
+This project sparked my ongoing interest in AI integration and raised compelling ethical questions around AI use, particularly how locally-run models can be a powerful and privacy-conscious alternative to large cloud-based language models.`,
     images: ["/media/AI_Chatbot/chatbot1.png", "/media/AI_Chatbot/chatbot2.png", "/media/AI_Chatbot/chatbot3.JPG"],
     videos: ["/media/AI_Chatbot/chatbot.mp4"],
   },
@@ -45,9 +45,9 @@ This project sparked my ongoing interest in AI integration and raised compelling
     href: null,
     status: "Physical",
     previewImage: "/media/Jeff_The_Shark/jeff1.jpg",
-    detail: `Jeff the Shark was one of my most ambitious personal projects, inspired by the Marvel character of the same name. 3D printing is a hobby of mine, and I wanted to take it further by incorporating an Arduino audio controller into the base to create a talking figurine. The result is a model that plays audio on command — bringing Jeff to life.
+    detail: `Jeff the Shark was one of my most ambitious personal projects, inspired by the Marvel character of the same name. 3D printing is a hobby of mine, and I wanted to take it further by incorporating an Arduino audio controller into the base to create a talking figurine. The result is a model that plays audio on command and plays jeffs sounds/voicelines.
 
-Along the way I learned how to use Cura to prepare and edit 3D models for printing, as well as basic soldering and rudimentary circuitry to wire up the audio module. 3D printing comes with its own set of challenges — particularly the time investment and the potential for failed prints. Patience and persistence paid off, and I'm really happy with how it turned out.
+Along the way I learned how to use Cura to prepare and edit 3D models for printing, as well as basic soldering and rudimentary circuitry to wire up the audio module. 3D printing comes with its own set of challenges, particularly the time investment and the potential for failed prints. Patience and persistence paid off, and I'm really happy with how it turned out.
 
 (The Jeff the Shark 3D model was purchased from CGTrader.)`,
     images: ["/media/Jeff_The_Shark/jeff1.jpg", "/media/Jeff_The_Shark/jeff2.jpg"],
@@ -55,13 +55,13 @@ Along the way I learned how to use Cura to prepare and edit 3D models for printi
   },
   {
     id: 3,
-    title: "Māori Language App — Figma Demo",
+    title: "Māori Language App - Figma Demo",
     blurb: "A high-fidelity Figma prototype for a Te Reo Māori learning app, exploring gamification and cultural UX.",
     tags: ["Figma", "UI/UX Design", "Prototyping"],
     href: null,
     status: "Design",
     previewImage: "/media/Figma/tui.png",
-    detail: `The Māori Language App was a project for my Digital Communications minor, giving me a solid grounding in UI/UX design principles — how typography, buttons, transitions, and colour can work together to create an engaging experience. It pushed me to step back from just making something functional and think carefully about how to make it feel good to use.
+    detail: `The Māori Language App was a project for my Digital Communications minor, giving me a solid grounding in UI/UX design principles - how typography, buttons, transitions, and colour can work together to create an engaging experience. It pushed me to step back from just making something functional and think carefully about how to make it feel good to use.
 
 The prototype features lessons for all skill levels, including listening exercises, reading activities, and gamified quizzes with visual feedback. This project aligns strongly with my goal of incorporating more Māori influence into technology, and I'd love to develop the concept further into a fully working application.`,
     images: ["/media/Figma/tui.png"],
@@ -89,7 +89,7 @@ Built with Expo and React Native, the app sends translation requests to a Node.j
     href: null,
     status: "Various",
     previewImage: null,
-    detail: `A mix of smaller experiments and creative projects made throughout my studies and in my own time — including motion graphics composites, Unity game prototypes, and 3D work in Blender.`,
+    detail: `A mix of smaller experiments and creative projects made throughout my studies and in my own time - including motion graphics composites, Unity game prototypes, and 3D work in Blender.`,
     images: [],
     videos: [
       "/media/Various/vid1.mp4",
@@ -99,13 +99,13 @@ Built with Expo and React Native, the app sends translation requests to a Node.j
   },
   {
     id: 6,
-    title: "Webflow — Minty3D",
+    title: "Webflow - Minty3D",
     blurb: "Web design and interactive UI experiments built in Webflow.",
     tags: ["Webflow", "UI/UX Design", "Web Design"],
     href: null,
     status: "Design",
     previewImage: "/media/Webflow/canvas.png",
-    detail: `Minty3D is a conceptual 3D printing website built as part of a Digital Communications assignment to learn Webflow. I drew on my development background to push beyond the basics — implementing a YouTube video carousel scroll and other interactive features using small amounts of custom code.
+    detail: `Minty3D is a conceptual 3D printing website built as part of a Digital Communications assignment to learn Webflow. I drew on my development background to push beyond the basics, implementing a YouTube video carousel scroll and other interactive features using small amounts of custom code.
 
 The project was a great opportunity to combine programming and design thinking in a short sprint with unfamiliar software. I researched common patterns from real startup websites, critiqued what worked and what didn't, and used that to inform my own design decisions. It reinforced how much thought goes into making an interface feel polished and intuitive.`,
     images: ["/media/Webflow/canvas.png", "/media/Webflow/canvas2.png"],
@@ -234,7 +234,7 @@ function ExpandedPanel({ project, onClose }: { project: typeof projects[0]; onCl
         </div>
       )}
 
-      {/* Tags + GitHub link */}
+      {/* Tags + GitHub link 
       <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center" }}>
         {project.tags.map((t) => (
           <span key={t} style={{
@@ -247,7 +247,7 @@ function ExpandedPanel({ project, onClose }: { project: typeof projects[0]; onCl
             marginLeft: "auto", fontSize: 13, color: "#00C2B3",
             textDecoration: "none", fontFamily: "'Space Grotesk', sans-serif", fontWeight: 600,
           }}>View on GitHub →</a>
-        )}
+        )} */}
       </div>
     </div>
   );
@@ -503,7 +503,7 @@ export default function Page() {
             I majored in Software Development at{" "}
             <span style={{ color: "var(--text)" }}>Auckland University of Technology (AUT)</span>{" "}
             for a Bachelor of Computer and Information Sciences, with minors in Creative Technology and Digital Communications.
-            I've used an array of tools across my projects — from Blender and Cura for 3D work,
+            I've used an array of tools across my projects - from Blender and Cura for 3D work,
             to web apps built with Python or Node.js and the OpenAI API.
             My focus is building interactive, engaging applications with a particular interest in{" "}
             <span style={{ color: "var(--text)" }}>AI</span>,{" "}
