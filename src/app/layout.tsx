@@ -460,7 +460,7 @@ export default function Page() {
             }} />
             <p className="section-label">Creative Portfolio</p>
             <h1 style={{ fontSize: "clamp(2rem,5vw,3rem)", fontWeight: 700, lineHeight: 1.15, margin: "0 0 16px" }}>
-              Kia ora — I'm <span style={{ color: "var(--accent)" }}>Lachlan McCreanney</span>
+              Kia ora, I'm <span style={{ color: "var(--accent)" }}>Lachlan McCreanney</span>
             </h1>
             <p style={{ color: "var(--muted)", fontSize: 16, lineHeight: 1.7, margin: "0 0 28px", maxWidth: 520 }}>
               AUT graduate with a passion for{" "}
