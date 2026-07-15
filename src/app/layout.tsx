@@ -99,16 +99,17 @@ Built with Expo and React Native, the app sends translation requests to a Node.j
     id: 5,
     title: "Various Projects",
     blurb: "A collection of small ideas and creations from university and personal time.",
-    tags: ["Blender", "Unity", "Motion Graphics"],
+    tags: ["Blender", "Unity", "Motion Graphics", "Figma"],
     href: null,
     status: "Various",
     previewImage: null,
     detail: `A mix of smaller experiments and creative projects made throughout my studies and in my own time - including motion graphics composites, Unity game prototypes, and 3D work in Blender.`,
-    images: [],
+    images: ["/media/Various/figgy1.png",
+      "media/Various/figgy2.png",],
     videos: [
       "/media/Various/vid1.mp4",
       "/media/Various/vid2.mp4",
-      "/media/Various/vid.mp4",
+      "/media/Various/vid3.mp4",
     ],
   },
   {
@@ -139,7 +140,7 @@ The project was a great opportunity to combine programming and design thinking i
   detail: `This was my first major programming assignment at university during my time in the Bachelors of Creative Technology. This was a semester long group project that taught us how to go through the creative design process, brainstorming, sketching, prototyping and developing. This concept was a "game-ifie" or arcade-like rubbish bin, with a grumpy polluting factory charicature. The incentive was to encourage peope to recycle in a fun way by getting people to throw their rubbish at him, knocking him down and prompting people about recycling/environmental facts with the target demographic being a younger audience.
   We did struggle with the scope of this project as it was our first time using arduino, using processing code language and was very ambitious. We sadlt didnt end up fully completing the project and were limited by the hardware we could afford. I designed the animation in Blender with cell shading after many concept designs and student surveys, many of the various character animations did not make it into the LED screen due to lack of knowledge and hardware limitations, our workaround for this was a stopmotion technique and just had multiple frames of the walking animation cycle through. This was overall a great team-bonding experience which created many friends, developed my entreprenuerial or product design skills a well as my ability in programming and thinking out of the box ways to overcome obstacles.`,
   images: ["/media/TrashTalk/screenshot1.png"],
-  videos: [],
+  videos: ["/media/trash/Binzo.mp4"],
 },
 ];
 
