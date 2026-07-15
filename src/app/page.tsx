@@ -32,6 +32,15 @@ const projects = [
     tags: ["Figma", "UI/UX Design", "Prototyping"],
     href: null,
     status: "Design",
+  
+  },
+   {
+    title: "AI Language Translator",
+    blurb:
+      "A mobile application built with expo/react, using ngrok to connect from phone to my laptop acting as the server with node.js while using openAI to translate ",
+    tags: ["OpenAI", "Node.js", "Expo/React App"],
+    href: null,
+    status: "Mobile App",
   },
 ];
 
@@ -252,11 +261,11 @@ export default function Page() {
             }} />
             <p className="section-label">Creative Portfolio</p>
             <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 700, lineHeight: 1.15, margin: "0 0 16px", color: "var(--text)" }}>
-              Kia ora — I'm{" "}
+              Kia ora, I'm{" "}
               <span style={{ color: "var(--accent)" }}>Lachlan McCreanney</span>
             </h1>
             <p style={{ color: "var(--muted)", fontSize: 16, lineHeight: 1.7, margin: "0 0 28px", maxWidth: 480 }}>
-              AUT student building interactive apps at the intersection of{" "}
+              AUT Graduate with a passion for physical computing, creative design and developing web applications with a heavy focus around A.I{" "}
               <span style={{ color: "var(--text)" }}>AI</span>,{" "}
               <span style={{ color: "var(--text)" }}>physical computing</span>, and{" "}
               <span style={{ color: "var(--text)" }}>creative design</span>.
@@ -318,13 +327,16 @@ export default function Page() {
           <p className="section-label">Background</p>
           <h2 style={{ fontSize: 22, fontWeight: 600, margin: "0 0 16px", color: "var(--text)" }}>About</h2>
           <p style={{ color: "var(--muted)", lineHeight: 1.8, fontSize: 15 }}>
-            I'm studying Software Development at{" "}
+            I majored in Software Development at{" "}
             <span style={{ color: "var(--text)" }}>Auckland University of Technology (AUT)</span>{" "}
             for a Bachelor of Computer and Information Sciences, with minors in Creative Technology and Digital Communications.
+            I have used an array of software and skills during my projects from Blender, Cura for 3D printing, web apps using python or node.js and openAI API's.
             My focus is building interactive, engaging applications — with a particular interest in{" "}
             <span style={{ color: "var(--text)" }}>AI</span>,{" "}
+            <span style={{ color: "var(--text)" }}>web design</span>,{" "}
             <span style={{ color: "var(--text)" }}>physical computing</span>, and{" "}
             <span style={{ color: "var(--text)" }}>VFX / 3D modelling</span>.
+    
           </p>
         </section>
 
