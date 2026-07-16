@@ -249,7 +249,7 @@ function ExpandedPanel({ project, onClose }: { project: typeof projects[0]; onCl
         </div>
       )}
 
-       Tags + GitHub link 
+  
       <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center" }}>
         {project.tags.map((t) => (
           <span key={t} style={{
